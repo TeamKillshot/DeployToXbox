@@ -1,77 +1,108 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Engine.Managers;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using System;
+using System.Collections.Generic;
 
-namespace PushtoXbox
+namespace PushToXbox
 {
-    /// <summary>
-    /// This is the main type for your game.
-    /// </summary>
     public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        SpriteFont font;
+        public Player player, player1, player2, player3, player4;
+
+        List<Player> playersList = new List<Player>();
+
+        PlayerIndex playerIndex;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            new InputManager(this);
+            player = new Player(this);
         }
 
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
+            font = Content.Load<SpriteFont>("SystemFont");
 
-            // TODO: use this.Content to load your game content here
+            player1 = new Player(this);
+            player1.Name = "Player1";
+            player1.Sprite = Content.Load<Texture2D>("Sprites/Mike_300X300");
+
+            player2 = new Player(this);
+            player2.Name = "Player2";
+            player2.Sprite = Content.Load<Texture2D>("Sprites/Spike_300X300");
+
+            player3 = new Player(this);
+            player3.Name = "Player3";
+
+            player4 = new Player(this);
+            player4.Name = "Player4";
+
+            playersList.Add(player1);
+            playersList.Add(player2);
+            playersList.Add(player3);
+            playersList.Add(player4);
+
+            foreach (Player player in playersList)
+            {
+                player.GetPlayerPosition(player);
+                player.GetPlayerIndex(player);
+            }
+
+            spriteBatch = new SpriteBatch(GraphicsDevice);
         }
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// game-specific content.
-        /// </summary>
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
         }
 
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+                Exit();
+
+            foreach (Player player in playersList)
+            {
+                GamePadState state = GamePad.GetState(player.index);
+
+                if(state.IsConnected)
+                {
+                    player.Update(gameTime, player);
+                }
+            }
+
             // TODO: Add your update logic here
 
             base.Update(gameTime);
         }
 
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            foreach (Player player in playersList)
+            {
+                GamePadState state = GamePad.GetState(player.index);
+
+                if (state.IsConnected)
+                {
+                    player.Draw(gameTime, font, spriteBatch, player);
+                }       
+            }            
 
             base.Draw(gameTime);
         }

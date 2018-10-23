@@ -27506,11 +27506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\Documents\\GitHub\\Game-Project-2018\\PushtoXbox\\PushtoXbox\\PushtoXbox.csproj",
+      "projectUniqueName": "C:\\Users\\Alex\\Documents\\GitHub\\DeployToXbox\\PushtoXbox\\PushtoXbox\\PushtoXbox.csproj",
       "projectName": "PushtoXbox",
-      "projectPath": "C:\\Users\\Alex\\Documents\\GitHub\\Game-Project-2018\\PushtoXbox\\PushtoXbox\\PushtoXbox.csproj",
+      "projectPath": "C:\\Users\\Alex\\Documents\\GitHub\\DeployToXbox\\PushtoXbox\\PushtoXbox\\PushtoXbox.csproj",
       "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\Documents\\GitHub\\Game-Project-2018\\PushtoXbox\\PushtoXbox\\obj\\",
+      "outputPath": "C:\\Users\\Alex\\Documents\\GitHub\\DeployToXbox\\PushtoXbox\\PushtoXbox\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

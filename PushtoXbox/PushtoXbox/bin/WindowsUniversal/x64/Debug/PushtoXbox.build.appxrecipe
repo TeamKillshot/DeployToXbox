@@ -10,22 +10,22 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>ef71bafd-4daf-458a-895b-bf9b6372c510</PackageIdentityName>
     <PackageIdentityPublisher>CN=Alex</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\bin\WindowsUniversal\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\bin\WindowsUniversal\x64\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\bin\WindowsUniversal\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\bin\WindowsUniversal\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\bin\WindowsUniversal\x64\Debug\PushtoXbox.exe">
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\bin\WindowsUniversal\x64\Debug\PushtoXbox.exe">
       <PackagePath>entrypoint\PushtoXbox.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -391,40 +391,55 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\MonoGame\v3.0\Assemblies\WindowsUniversal\SharpDX.XAudio2.dll">
       <PackagePath>SharpDX.XAudio2.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Content\Sprites\Mike_300X300.png">
+      <PackagePath>Content\Sprites\Mike_300X300.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Content\Sprites\Spike_300X300.png">
+      <PackagePath>Content\Sprites\Spike_300X300.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Content\bin\WindowsStoreApp\Content\Sprites\Mike_300X300.xnb">
+      <PackagePath>Content\Sprites\Mike_300X300.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Content\bin\WindowsStoreApp\Content\Sprites\Spike_300X300.xnb">
+      <PackagePath>Content\Sprites\Spike_300X300.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\Content\bin\WindowsStoreApp\Content\SystemFont.xnb">
+      <PackagePath>Content\SystemFont.xnb</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\bin\WindowsUniversal\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\bin\WindowsUniversal\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\Game-Project-2018\PushtoXbox\PushtoXbox\bin\WindowsUniversal\x64\Debug\Core\PushtoXbox.exe">
+    <AppxPackagedFile Include="C:\Users\Alex\Documents\GitHub\DeployToXbox\PushtoXbox\PushtoXbox\bin\WindowsUniversal\x64\Debug\Core\PushtoXbox.exe">
       <PackagePath>PushtoXbox.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

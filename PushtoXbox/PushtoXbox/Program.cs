@@ -1,7 +1,8 @@
 ﻿using System;
 
-namespace PushtoXbox
+namespace PushToXbox
 {
+//\#if WINDOWS || LINUX
     /// <summary>
     /// The main class.
     /// </summary>
@@ -10,10 +11,14 @@ namespace PushtoXbox
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        [STAThread]
         static void Main()
         {
-            var factory = new MonoGame.Framework.GameFrameworkViewSource<Game1>();
-            Windows.ApplicationModel.Core.CoreApplication.Run(factory);
-        }
+			var factory = new MonoGame.Framework.GameFrameworkViewSource<Game1>();
+			Windows.ApplicationModel.Core.CoreApplication.Run(factory);
+
+			
+		}
     }
+//#endif
 }

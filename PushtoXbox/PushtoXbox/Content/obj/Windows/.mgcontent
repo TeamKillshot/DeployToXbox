@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Alex/Documents/GitHub/DeployToXbox/PushtoXbox/PushtoXbox/Content/SystemFont.spritefont</File>
+    <File>C:/Users/Alex/Documents/GitHub/DeployToXbox/PushtoXbox/PushtoXbox/Content/Sprites/Mike_300X300.png</File>
+    <File>C:/Users/Alex/Documents/GitHub/DeployToXbox/PushtoXbox/PushtoXbox/Content/Sprites/Spike_300X300.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
